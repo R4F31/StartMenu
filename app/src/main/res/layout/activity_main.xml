@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/img_1"
+    >
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:layout_alignParentTop="true">
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="191dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="0dp"
+            android:text="@string/menu" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/img" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ListView_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r2"
+        android:layout_marginTop="4dp"
+        android:listSelector="@drawable/selector"
+        >
+    </ListView>
+
+
+    <!--
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_1"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        />
+-->
+
+</RelativeLayout>
